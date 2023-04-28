@@ -1,7 +1,11 @@
 /******************************************
 /* CSS
 /*******************************************/
-
+.font-face-rb {
+  font-family: "Recoleta-bold";
+  font-size: 3rem;
+  font-weight: 700;
+}
 /* Box Model Hack */
 * {
   box-sizing: border-box;

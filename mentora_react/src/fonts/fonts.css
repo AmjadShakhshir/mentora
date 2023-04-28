@@ -1,0 +1,70 @@
+/* Gotham Font */
+@font-face {
+    font-family: "GothamLight";
+    /*Can be any text*/
+    src: local("GothamLight"),
+        url("./Gotham/GothamLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gotham";
+    /*Can be any text*/
+    src: local("Gotham"),
+        url("./Gotham/GothamMedium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "GothamBook";
+    /*Can be any text*/
+    src: local("GothamBook"),
+        url("./Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GothamBold";
+    /*Can be any text*/
+    src: local("GothamBold"),
+        url("./Gotham/GothamBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GothamThin";
+    /*Can be any text*/
+    src: local("GothamThin"),
+        url("./Gotham/GothamThin.otf") format("opentype");
+}
+
+/* Recoleta Font */
+@font-face {
+    font-family: "RecoletaLight";
+    /*Can be any text*/
+    src: local("RecoletaLight"),
+        url("./Recoleta/Recoleta-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Recoleta";
+    /*Can be any text*/
+    src: local("Recoleta"),
+        url("./Recoleta/Recoleta-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RecoletaBold";
+    /*Can be any text*/
+    src: local("RecoletaBold"),
+        url("./Recoleta/Recoleta-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RecoletaSemiBold";
+    /*Can be any text*/
+    src: local("RecoletaSemiBold"),
+        url("./Recoleta/Recoleta-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RecoletaThin";
+    /*Can be any text*/
+    src: local("RecoletaThin"),
+        url("./Recoleta/Recoleta-Thin.ttf") format("truetype");
+}

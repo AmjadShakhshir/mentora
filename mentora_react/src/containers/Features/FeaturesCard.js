@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid, Paper, Typography, Box } from '@mui/material';
-import { images } from "../../constants";
 
 const FeaturesCard = (props) => {
   return (
@@ -36,7 +35,7 @@ const FeaturesCard = (props) => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-              }}><img src={images.arrow} alt="" /></Box>
+              }}><img src={props.img} alt="" /></Box>
           </Box>
           <Typography variant='h5' sx={{
             fontWeight: 700,

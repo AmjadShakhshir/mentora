@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Grid } from '@mui/material';
 import FeaturesCard from "./FeaturesCard";
 import { Buttons } from "../../components";
+import { images } from "../../constants";
 
 const Features = () => {
   return (
@@ -38,17 +39,17 @@ const Features = () => {
         </Box>
 
         <Grid container spacing={4}>
-            <FeaturesCard number={1}
+            <FeaturesCard number={1} img={images.target}
             text={'Define Your Target'} textPara={'Identify Your Desired Target For The Next Quarter.'} />
-            <FeaturesCard number={3}
+            <FeaturesCard number={3} img={images.world}
             text={'North Star'} textPara={'Set Goals And Metrics To Stay On Track.'} />
-            <FeaturesCard number={5}
+            <FeaturesCard number={5} img={images.arrow}
             text={'Convert More'} textPara={'Cultivate Community Through Belonging And Ugc.'} />
-            <FeaturesCard number={2}
+            <FeaturesCard number={2} img={images.charts}
             text={'In-Depth Analysis'} textPara={'We Analyze Your Business, Define Your Audience, And Find The Perfect Channel To Engage Them.'} />
-            <FeaturesCard number={4}
+            <FeaturesCard number={4} img={images.ladder}
             text={'Build & Sustain'} textPara={'Create A Strong Brand Identity With Viral Content And Our Influencer Community For Rapid Exposure.'} />
-            <FeaturesCard number={6}
+            <FeaturesCard number={6} img={images.money}
             text={'Succeed & Scale'} textPara={'Boost Revenue With Our Proven Strategies And Optimize For Maximum Results.'} />
         </Grid>
 

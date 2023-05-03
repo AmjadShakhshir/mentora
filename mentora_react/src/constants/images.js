@@ -18,6 +18,7 @@ import charts from '../assets/charts.svg';
 import target from '../assets/target.svg';
 import money from '../assets/money.svg';
 import ladder from '../assets/ladder.svg';
+import funktel from '../assets/funktel.png';
 
 const images = {
     arrow,
@@ -40,6 +41,7 @@ const images = {
     screen1,
     arc,
     communityLogo,
+    funktel
 };
 
 export default images;

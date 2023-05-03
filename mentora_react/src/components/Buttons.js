@@ -13,7 +13,7 @@ const Buttons = () => {
             width: '231px',
             height: '55px',
             borderRadius:'22px',
-            paddingTop: '20px'
+            paddingTop: '20px',
             }}
             endIcon={<CallMadeIcon />}
             >Get Started</Button>

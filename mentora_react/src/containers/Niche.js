@@ -11,7 +11,7 @@ const Niche = () => {
       alignItems: 'center',
       textAlign: 'center'
     }}>
-        <Typography variant='h6'sx={{
+        <Typography variant='h6' sx={{
             fontFamily: 'Recoleta',
             color: '#F5A34C',
             fontWeight: 700,

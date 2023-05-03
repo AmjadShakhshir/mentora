@@ -34,7 +34,7 @@ const Header = () => {
       }} >Boost</Typography> Your Business With Our Tailored Community Growth Strategies.
       </Typography>
 
-      <Buttons />
+      <Box component={'div'} justifySelf={'center'}><Buttons /></Box>
 
       <Box sx={{
         justifySelf:'center',

@@ -6,7 +6,7 @@ const CaseCard = ({spanText, title}) => {
     <Card sx={{ minWidth: 275, height: '100%', bgcolor: 'black', color: 'white', borderRadius: '22px'}}>
         <CardContent>
           <Typography variant='h4' fontWeight={'700'} color={'#F5A34C'}>{title}</Typography>
-          <Typography variant='body2' fontSize={'.7rem'} fontWeight={'300'}>{spanText}</Typography>
+          <Typography variant='body1' fontSize={'.8rem'} fontWeight={'300'}>{spanText}</Typography>
       </CardContent>
     </Card>
   )

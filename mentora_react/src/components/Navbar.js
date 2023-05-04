@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: '-8px',
     width: '594px',
     height: '334px',
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
+    },
   },
 }));
 
@@ -77,17 +80,19 @@ export default function Navbar() {
   const classes = useStyles();
   
   return (
-    <Box sx={{ flexGrow: 1 }} className={classes.root}>
+    <Box sx={{ flexGrow: 1 }} className={classes.root} component={'nav'}>
       <AppBar position="static"
         sx={{ bgcolor: '#fff',
               borderRadius: 22,
-              paddingInline: 15}}
+              }}
+              xs={{paddingInline: 10}}
+              md={{paddingInline: 15}}
               className={classes.appBar}>
         <Toolbar>
-            <Box display={'flex'} flexGrow={1}>
+            <Box display={'flex'} flexGrow={1} component={'div'}>
                 <img src={images.logo} alt="logo" />
             </Box>
-            <img src={images.ground} alt="" className={classes.img} />
+            <img src={images.ground} alt="many black hands holding soil from ground" className={classes.img} />
             <IconButton
               size="large"
               edge="start"
@@ -102,7 +107,12 @@ export default function Navbar() {
               onClick={handleToggle}
             >
 
-            <Typography variant="h6" component="div" sx={{ display:'inline-flex', flexGrow: 1, fontFamily: 'GothamBold' }} marginRight={1} color={'orange'}>
+            <Typography variant="h6"
+            component="div"
+            sx={{ display:'inline-flex',
+                  flexGrow: 1,
+                  fontFamily: 'GothamBold' }} marginRight={1} color={'orange'}
+                  >
                 Menu
               <HiOutlineMenuAlt1 size={26} style={{color: "orange", transform: 'rotate(180deg)', marginLeft: 5, marginTop: -4}}/>
             </Typography>

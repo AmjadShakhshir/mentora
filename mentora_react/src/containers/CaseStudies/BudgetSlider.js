@@ -41,7 +41,7 @@ function BudgetSlider() {
             type="range" 
             min="100000" 
             max="10000000" 
-            step="1000" 
+            step="100" 
             value={budget} 
             onChange={handleBudgetChange} 
             id="budget-slider"

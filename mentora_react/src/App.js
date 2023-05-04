@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import './fonts/fonts.css'
-import { Header, Marketing, Features, Community, Niche, Testimonials, CaseStudies,  } from './containers';
+import { Header, Marketing, Features, Community, Niche, Testimonials, CaseStudies, Footer,  } from './containers';
 import { Container, createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
           <Niche />
           <Testimonials />
           <CaseStudies />
+          <Footer />
         </Container>
       </ThemeProvider>
     </BrowserRouter>

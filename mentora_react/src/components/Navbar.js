@@ -19,9 +19,6 @@ import '../fonts/fonts.css'
 
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
     position: 'relative',
@@ -80,7 +77,7 @@ export default function Navbar() {
   const classes = useStyles();
   
   return (
-    <Box sx={{ flexGrow: 1 }} className={classes.root} component={'nav'}>
+    <Box sx={{ flexGrow: 1 }} component={'nav'}>
       <AppBar position="static"
         sx={{ bgcolor: '#fff',
               borderRadius: 22,
@@ -111,6 +108,7 @@ export default function Navbar() {
             component="div"
             sx={{ display:'inline-flex',
                   flexGrow: 1,
+                  pt: 2,
                   fontFamily: 'GothamBold' }} marginRight={1} color={'orange'}
                   >
                 Menu

@@ -1,22 +1,42 @@
 import React from 'react';
-import { Button } from '@mui/material';
+import { Box, Button, Dialog, DialogContent } from '@mui/material';
 import CallMadeIcon from '@mui/icons-material/CallMade';
+import StepperDialog from './StepperDialog/StepperDialog';
 
 const Buttons = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+   
   return (
-    <Button variant="contained"
-      sx={{ textAlign: 'center',
-            backgroundColor: '#F5A34C',
-            fontFamily: 'Gotham',
-            fontWeight: '700',
-            fontSize: '1rem',
-            width: '231px',
-            height: '55px',
-            borderRadius:'22px',
-            paddingTop: '20px',
-            }}
-            endIcon={<CallMadeIcon />}
-            >Get Started</Button>
+    <>
+      <Button variant="contained" onClick={handleClickOpen}
+        sx={{ textAlign: 'center',
+              backgroundColor: '#F5A34C',
+              fontFamily: 'Gotham',
+              fontWeight: '700',
+              fontSize: '1rem',
+              width: '231px',
+              height: '55px',
+              borderRadius:'22px',
+              paddingTop: '20px',
+              }}
+              endIcon={<CallMadeIcon style={{ marginBottom: 17, fontSize: '1.7rem' }} />}
+              >Get Started</Button>
+      <Box component={'div'}>
+        <Dialog open={open} onClose={handleClose} maxWidth={800} maxHeight={'60vh'}>
+          <DialogContent component={'div'} >
+            <StepperDialog />
+          </DialogContent>
+        </Dialog>
+      </Box>
+    </>
   )
 }
 

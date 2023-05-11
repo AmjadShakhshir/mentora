@@ -19,6 +19,10 @@ import target from '../assets/target.svg';
 import money from '../assets/money.svg';
 import ladder from '../assets/ladder.svg';
 import funktel from '../assets/funktel.png';
+import onFocusTarget from '../assets/onFocusTarget.png';
+import suitMoney from '../assets/suitMoney.png';
+import letter from '../assets/letter.png';
+import chartStat from '../assets/chartStat.png';
 
 const images = {
     arrow,
@@ -41,7 +45,11 @@ const images = {
     screen1,
     arc,
     communityLogo,
-    funktel
+    funktel,
+    onFocusTarget,
+    letter,
+    chartStat,
+    suitMoney,
 };
 
 export default images;

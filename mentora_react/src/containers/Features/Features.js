@@ -39,18 +39,30 @@ const Features = () => {
         </Box>
 
         <Grid container spacing={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <FeaturesCard number={1} img={images.target}
             text={'Define Your Target'} textPara={'Identify Your Desired Target For The Next Quarter.'} />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
             <FeaturesCard number={3} img={images.world}
             text={'North Star'} textPara={'Set Goals And Metrics To Stay On Track.'} />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
             <FeaturesCard number={5} img={images.arrow}
             text={'Convert More'} textPara={'Cultivate Community Through Belonging And Ugc.'} />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
             <FeaturesCard number={2} img={images.charts}
             text={'In-Depth Analysis'} textPara={'We Analyze Your Business, Define Your Audience, And Find The Perfect Channel To Engage Them.'} />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
             <FeaturesCard number={4} img={images.ladder}
             text={'Build & Sustain'} textPara={'Create A Strong Brand Identity With Viral Content And Our Influencer Community For Rapid Exposure.'} />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
             <FeaturesCard number={6} img={images.money}
             text={'Succeed & Scale'} textPara={'Boost Revenue With Our Proven Strategies And Optimize For Maximum Results.'} />
+          </Grid>
         </Grid>
 
     </Box>

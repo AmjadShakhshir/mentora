@@ -1,9 +1,14 @@
 const createError = require('http-errors');
 const express = require('express');
+const colors = require('colors');
 const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const { errorHandler } = require("./middleware/errorMiddleware");
+const connectDB = require('./config/db');
+
+connectDB();
 
 const cors = require("cors");
 const indexRouter = require('./routes/index');

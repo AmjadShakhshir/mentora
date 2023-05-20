@@ -12,9 +12,8 @@ connectDB();
 
 const cors = require("cors");
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
-const testAPIRouter = require("./routes/testAPI");
-const goalsRouter = require("./routes/goals");
+const userRouter = require('./routes/userRoutes');
+const goalsRouter = require("./routes/goalsRoutes");
 
 const app = express();
 
@@ -31,8 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(errorHandler);
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use("/testAPI", testAPIRouter);
+app.use('/api/users', userRouter);
 app.use("/api/goals", goalsRouter);
 
 // catch 404 and forward to error handler

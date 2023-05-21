@@ -1,18 +1,9 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
+import { AppBar, Box, Toolbar, Typography, IconButton, ClickAwayListener,
+Grow, Paper, Popper, MenuItem, MenuList, Stack } from '@mui/material';
 import {HiOutlineMenuAlt1} from "react-icons/hi";
-import ClickAwayListener from '@mui/material/ClickAwayListener';
-import Grow from '@mui/material/Grow';
-import Paper from '@mui/material/Paper';
-import Popper from '@mui/material/Popper';
-import MenuItem from '@mui/material/MenuItem';
-import MenuList from '@mui/material/MenuList';
-import Stack from '@mui/material/Stack';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 import { images } from '../constants';
 import '../fonts/fonts.css'
@@ -143,10 +134,30 @@ export default function Navbar() {
                       aria-labelledby="composition-button"
                       onKeyDown={handleListKeyDown}
                     >
-                      {['home', 'features', 'community', 'testimonials'].map((item) =>
-                          <MenuItem key={item} onClick={handleClose}>{item}</MenuItem>
-                      )}
+                      <MenuItem
+                        key='home'
+                        onClick={handleClose}> 
+                        <Link to='/'>Home</Link>
+                      </MenuItem>
+                      <MenuItem
+                        key='login'
+                        onClick={handleClose}>
+                        <Link to='/login'>Login</Link>
+                      </MenuItem>
+
+                      <MenuItem
+                        key='register'
+                        onClick={handleClose}>
+                        <Link to='/register'>Register</Link>
+                      </MenuItem>
+
+                      <MenuItem
+                        key='dashboard'
+                        onClick={handleClose}>
+                        <Link to='/dashboard'>Dashboard</Link>
+                      </MenuItem>
                     </MenuList>
+
                   </ClickAwayListener>
                 </Paper>
               </Grow>

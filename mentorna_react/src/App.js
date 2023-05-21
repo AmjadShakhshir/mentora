@@ -35,13 +35,13 @@ function App() {
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/dashboard/:id" element={<Dashboard />} />
             </Routes>
-            <Marketing />
+            {/* <Marketing />
             <Features />
             <Community />
             <Niche />
             <Testimonials />
             <CaseStudies />
-            <Footer />
+            <Footer /> */}
           </Container>
         </ThemeProvider>
       </Router>

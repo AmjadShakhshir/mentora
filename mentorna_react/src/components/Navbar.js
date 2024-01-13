@@ -80,7 +80,6 @@ export default function Navbar() {
             <Box display={'flex'} flexGrow={1} component={'div'}>
                 <img src={images.logo} alt="logo" />
             </Box>
-            <img src={images.ground} alt="many black hands holding soil from ground" className={classes.img} />
             <IconButton
               size="large"
               edge="start"

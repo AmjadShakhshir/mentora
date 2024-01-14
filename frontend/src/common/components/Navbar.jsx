@@ -110,24 +110,24 @@ export default function Navbar() {
                       <MenuItem
                         key='home'
                         onClick={handleClose}> 
-                        <Link to='/'>Home</Link>
+                        <Link to='/' style={{ textDecoration: 'none' }} >Home</Link>
                       </MenuItem>
                       <MenuItem
                         key='login'
                         onClick={handleClose}>
-                        <Link to='/login'>Login</Link>
+                        <Link to='/' style={{ textDecoration: 'none' }}>Login</Link>
                       </MenuItem>
 
                       <MenuItem
                         key='register'
                         onClick={handleClose}>
-                        <Link to='/register'>Register</Link>
+                        <Link to='/' style={{ textDecoration: 'none' }}>Register</Link>
                       </MenuItem>
 
                       <MenuItem
                         key='dashboard'
                         onClick={handleClose}>
-                        <Link to='/dashboard'>Dashboard</Link>
+                        <Link to='/' style={{ textDecoration: 'none' }}>Dashboard</Link>
                       </MenuItem>
                     </MenuList>
 

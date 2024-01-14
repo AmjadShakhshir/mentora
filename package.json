@@ -1,44 +1,51 @@
 {
-  "name": "mentorna",
-  "version": "0.0.0",
+  "name": "mentora",
+  "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "start": "node mentorna_backend/bin/www",
-    "server": "nodemon mentorna_backend/bin/www",
-    "client": "npm start --prefix mentorna_react",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "colors": "^1.4.0",
-    "concurrently": "^8.2.2",
-    "cookie-parser": "~1.4.4",
-    "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "dotenv": "^16.0.3",
-    "express": "~4.16.1",
-    "express-async-handler": "^1.2.0",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "jsonwebtoken": "^9.0.0",
-    "mongodb": "^5.5.0",
-    "mongoose": "^7.1.1",
-    "morgan": "~1.9.1",
-    "react-scripts": "^5.0.1"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "main": "app.js",
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AmjadShakhshir/mentora.git"
-  },
-  "bugs": {
-    "url": "https://github.com/AmjadShakhshir/mentora/issues"
-  },
-  "homepage": "https://github.com/AmjadShakhshir/mentora#readme"
+    "@types/bcryptjs": "^2.4.6",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
 }

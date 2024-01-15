@@ -19,7 +19,8 @@ Mentorna is a user-friendly platform simplifying marketing planning for business
 
 ![NodeJS](https://img.shields.io/badge/NodeJS-20.10.0-purple)
 ![ExpressJS](https://img.shields.io/badge/ExpressJS-4.18.2-red)
-![Mongoose](https://img.shields.io/badge/Momgoose-8.0.0-yellow)
+![Mongoose](https://img.shields.io/badge/Mongoose-8.0.0-yellow)
+![React](https://img.shields.io/badge/React-8.0.0-yellow)
 
 ## Getting started
 

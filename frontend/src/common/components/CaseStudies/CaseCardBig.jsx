@@ -24,7 +24,10 @@ CaseCardBig.propTypes = {
     spanText: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
-    symbol: PropTypes.string.isRequired,
+    symbol: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object
+    ]).isRequired,
 };
 
 export default CaseCardBig

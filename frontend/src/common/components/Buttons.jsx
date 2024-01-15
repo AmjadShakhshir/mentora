@@ -31,7 +31,7 @@ const Buttons = () => {
               endIcon={<CallMadeIcon style={{ marginBottom: 17, fontSize: '1.7rem' }} />}
               >Get Started</Button>
       <Box component={'div'}>
-        <Dialog open={open} onClose={handleClose} maxWidth={'800px'} maxHeight={'60vh'}>
+        <Dialog open={open} onClose={handleClose} maxWidth={'800px'} maxheight={'60vh'}>
           <DialogContent component={'div'} >
             <StepperDialog />
           </DialogContent>

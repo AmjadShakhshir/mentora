@@ -4,13 +4,13 @@
     {
       "src": "backend/server.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["./**"] }
+      "config": { "includeFiles": ["backend/**"] }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "backend/server.js"
     }
   ]
 }
